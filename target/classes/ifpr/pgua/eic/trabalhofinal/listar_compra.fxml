@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane styleClass="background-pane" stylesheets="/ifpr/pgua/eic/trabalhofinal/css/listar_cliente.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.trabalhofinal.controllers.ListarCompra">
+   <children>
+      <TableView fx:id="tbCompra" layoutX="5.0" layoutY="6.0" prefHeight="372.0" prefWidth="431.0">
+        <columns>
+          <TableColumn fx:id="tbcId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tbcCliente" prefWidth="138.0" text="Cliente" />
+            <TableColumn fx:id="tbcEstoque" prefWidth="96.0" text="Produto" />
+        </columns>
+      </TableView>
+      <Button styleClass="voltar-button" layoutX="461.0" layoutY="30.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+      <Button styleClass="deletar-button" layoutX="461.0" layoutY="63.0" mnemonicParsing="false" onAction="#deletarCompra" text="Deletar" />
+   </children>
+</Pane>

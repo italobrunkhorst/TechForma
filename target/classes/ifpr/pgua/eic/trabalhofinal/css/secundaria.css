@@ -1,0 +1,7 @@
+.background-pane{
+    -fx-background-color: rgb(255, 255, 255);
+}
+.button{
+    -fx-background-color: #58acec; /* Cor de fundo do botão */
+    -fx-text-fill: black;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane styleClass="background-pane" stylesheets="/ifpr/pgua/eic/trabalhofinal/css/cadastrar_cliente.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.trabalhofinal.controllers.CadastroCliente">
+   <children>
+      <VBox layoutX="85.0" layoutY="31.0" prefHeight="179.0" prefWidth="180.0" spacing="10.0">
+         <children>
+            <TextField fx:id="tfNome">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="tfCpf">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="tfEmail" />
+            <TextField fx:id="tfTelefone" />
+            <TextField fx:id="tfPorcentagem" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="47.0" layoutY="46.0" text="Nome" />
+      <Label layoutX="54.0" layoutY="80.0" text="CPF" />
+      <Label layoutX="50.0" layoutY="116.0" text="Email" />
+      <Label layoutX="37.0" layoutY="150.0" text="Telefone" />
+      <Label layoutX="12.0" layoutY="183.0" text="Porcentagem" />
+      <Button styleClass="cadastrar-button" layoutX="85.0" layoutY="225.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
+      <Button styleClass="cancelar-button" layoutX="175.0" layoutY="225.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <ImageView fitHeight="315.0" fitWidth="330.0" layoutX="277.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="ifpr/pgua/eic/trabalhofinal/images/FORMULA-ANIMAL.png" /> 
+         </image>
+      </ImageView>
+   </children>
+</Pane>

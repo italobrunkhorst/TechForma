@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox styleClass="background-pane" stylesheets="/ifpr/pgua/eic/trabalhofinal/css/listar_cliente.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.trabalhofinal.controllers.ListarCliente">
+   <children>
+      <TableView fx:id="tbCliente" prefHeight="318.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tbcId" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="tbcNome" prefWidth="123.0" text="Nome" />
+            <TableColumn fx:id="tbcCpf" prefWidth="106.0" text="CPF" />
+            <TableColumn fx:id="tbcTelefone" prefWidth="103.0" text="Telefone" />
+            <TableColumn fx:id="tbcEmail" prefWidth="137.0" text="Email" />
+            <TableColumn fx:id="tbcPorcentagem" minWidth="0.0" prefWidth="90.0" text="Porcentagem" />
+        </columns>
+      </TableView>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="33.0" layoutY="50.0" text="CPF" />
+            <Label layoutX="27.0" layoutY="17.0" text="Nome" />
+            <Button styleClass="voltar-button" layoutX="520.0" layoutY="100.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+            <Button styleClass="deletar-button" layoutX="450.0" layoutY="100.0" mnemonicParsing="false" onAction="#deletarCliente" text="Deletar" />
+            <Label layoutX="238.0" layoutY="17.0" text="Email" />
+            <Label layoutX="20.0" layoutY="83.0" text="Telefone" />
+            <Label layoutX="247.0" layoutY="50.0" text="\%" />
+            <TextField fx:id="tfNomeDetalhes" layoutX="69.0" layoutY="13.0" />
+            <TextField fx:id="tfCpfDetalhes" layoutX="69.0" layoutY="46.0" />
+            <TextField fx:id="tfTelefoneDetalhes" layoutX="69.0" layoutY="79.0" />
+            <TextField fx:id="tfEmailDetalhes" layoutX="280.0" layoutY="13.0" />
+            <TextField fx:id="tfPorcentagemDetalhes" layoutX="280.0" layoutY="46.0" />
+            <Button styleClass="salvar-button" layoutX="387.0" layoutY="100.0" mnemonicParsing="false" onAction="#atualizarCliente" text="Salvar" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

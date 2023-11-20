@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane styleClass="background-pane" stylesheets="/ifpr/pgua/eic/trabalhofinal/css/secundaria.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.trabalhofinal.controllers.Principal">
+   <children>
+      <Button layoutX="496.0" layoutY="342.0" mnemonicParsing="false" onAction="#principal" prefHeight="32.0" prefWidth="62.0" text="Sair" />
+      <VBox layoutX="44.0" layoutY="46.0" prefHeight="200.0" prefWidth="126.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#listarUser" text="Lista de Usúarios" />
+            <Button mnemonicParsing="false" onAction="#cadastrarCliente" text="Cadastrar Cliente" />
+            <Button mnemonicParsing="false" onAction="#listarCliente" text="Lista de Clientes" />
+            <Button mnemonicParsing="false" onAction="#cadastrarEstoque" text="Cadastrar Estoque" />
+            <Button mnemonicParsing="false" onAction="#listarEstoque" text="Lista de Estoque" />
+            <Button mnemonicParsing="false" onAction="#cadastrarComprar" text="Cadastrar Venda" />
+            <Button mnemonicParsing="false" onAction="#listarCompra" text="Lista de Vendas" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="293.0" fitWidth="299.0" layoutX="224.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="ifpr/pgua/eic/trabalhofinal/images/FORMULA-ANIMAL.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

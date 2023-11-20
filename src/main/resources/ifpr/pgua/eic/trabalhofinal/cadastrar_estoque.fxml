@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane styleClass="background-pane" stylesheets="/ifpr/pgua/eic/trabalhofinal/css/cadastrar_cliente.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.trabalhofinal.controllers.CadastroEstoque">
+   <children>
+      <Label layoutX="60.0" layoutY="75.0" text="Nome" />
+      <Label layoutX="60.0" layoutY="114.0" text="Quantidade" />
+      <Label layoutX="60.0" layoutY="148.0" text="Data de Validade" />
+      <DatePicker fx:id="datePicker" layoutX="168.0" layoutY="144.0" />
+      <TextField fx:id="tfQuantidade" layoutX="136.0" layoutY="110.0" />
+      <TextField fx:id="tfNome" layoutX="105.0" layoutY="71.0" />
+      <Button styleClass="cadastrar-button" layoutX="79.0" layoutY="200.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
+      <Button styleClass="cancelar-button" layoutX="168.0" layoutY="200.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <ImageView fitHeight="264.0" fitWidth="214.0" layoutX="355.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="ifpr/pgua/eic/trabalhofinal/images/FORMULA-ANIMAL.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

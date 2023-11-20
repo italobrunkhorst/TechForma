@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane styleClass="background-pane" stylesheets="/ifpr/pgua/eic/trabalhofinal/css/logar_user.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.trabalhofinal.controllers.LoginUser">
+   <children>
+      <ImageView fitHeight="357.0" fitWidth="502.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="ifpr/pgua/eic/trabalhofinal/images/FORMULA-ANIMAL.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="342.0" layoutY="167.0" text="Nome" />
+      <TextField fx:id="tfNomeLogin" layoutX="394.0" layoutY="163.0" />
+      <Label layoutX="342.0" layoutY="209.0" text="Senha" />
+      <PasswordField fx:id="pfSenhaLogin" layoutX="394.0" layoutY="205.0" />
+      <Button styleClass="logar-button" layoutX="394.0" layoutY="247.0" mnemonicParsing="false" onAction="#logar" text="Logar" />
+      <Button styleClass="cancelar-button" layoutX="481.0" layoutY="247.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      
+   </children>
+</Pane>

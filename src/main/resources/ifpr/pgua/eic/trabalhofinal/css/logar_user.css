@@ -1,0 +1,11 @@
+.logar-button{
+    -fx-background-color: #58ec58;
+    -fx-text-fill: black;
+}
+.background-pane{
+    -fx-background-color: rgb(255, 255, 255);
+}
+.cancelar-button{
+    -fx-background-color: #ff4848;
+    -fx-text-fill: black;
+}
